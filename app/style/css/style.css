@@ -1,15 +1,23 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#landing-page {
+  height: 675px;
+  text-align: center;
+  background-image: url("../images/six.jpg");
+  background-size: cover;
 }
 #page1 {
-  background: green;
-  height: 655px;
+  background: url("../images/option3.png");
+  height: 675px;
 }
 
 #page2 {
   background: silver;
-  height: 655px;
+  height: 675px;
 }
 
 #page3 {
@@ -33,14 +41,17 @@
   letter-spacing: -5px;
   color: rgba(0, 0, 255, 0.5);
 }
-
-#hi:after {
-  content: "Hello!";
-  position: absolute;
-  left: 10px;
-  top: 5px;
-  color: rgba(255, 0, 0, 0.5);
+.about-me {
+  text-align: center;
+  padding-left: 10em;
 }
+/* #hi:after {
+  content: "Hello World!";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: rgba(255, 0, 0, 0.5);
+} */
 
 .profileText {
   text-align: center;
@@ -64,6 +75,7 @@
   margin: auto;
   bottom: 10%;
   width: 100%;
+  line-height: 2em;
   /* color: rgba(255, 255, 255, 0.74); */
 }
 
@@ -119,66 +131,155 @@ hr {
   font-size: 20px;
 }
 
-nav.dot {
-  background: none;
-  box-shadow: none;
+.left-sticky {
+  color: maroon;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+  left: 20px;
+  width: 120px;
+  height: 300px;
+  line-height: 4em;
+  padding: 5px;
+  position: sticky;
+  -webkit-position: sticky;
+  display: flex;
+  background-color: mediumorchid;
 }
-nav.dot a {
-  position: relative;
-  color: #6f6f6f;
-  display: inline-block;
-  padding: 0 2.5rem;
+
+.active {
+  color: gold;
 }
-nav.dot a:hover:before,
-nav.dot a:hover:first-child:before {
-  width: 12px;
-  height: 12px;
-  margin: 0 0 0 -6px;
-  bottom: -1px;
+
+.info {
+  /* /* position: absolute;
+  top: 30%;
+  left: 40%;
+  text-transform: (-50%, -50%);
+  /* width: 100px;
+  height: 100px; */
+  /* font-size: 5em;
+  font-family: "Roberto", "sans-serif"; */
+  /* position:relative; 
+  float:left;
+  top:50%; 
+  left:50%; 
+  transform:(translate) */
+  font-family: "Montserrat", sans-serif;
+  text-transform: (-50%, -50%);
+  top: 30%;
+  font-size: 100px;
+  padding-top: 250px;
 }
-nav.dot a:before,
-nav.dot a:first-child:before {
-  content: "";
-  position: absolute;
-  background: #f7585e;
+
+.text-js {
+  opacity: 0;
+}
+
+.cursor {
   display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 0 0 -5px;
-  border-radius: 50%;
-  bottom: 0;
-  left: 50%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-image: url("../images/landing.jpg");
   z-index: 1;
-  transition: width ease-in 0.1s, height ease-in 0.1s, margin ease-in 0.1s,
-    bottom ease-in 0.1s;
+  animation: flash 0.5s none infinite alternate;
 }
-nav.dot a:after {
-  content: "";
-  position: absolute;
-  background: #f7585e;
-  display: block;
-  width: calc(100% + 15px);
-  height: 2px;
-  bottom: 4px;
-  left: 50%;
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-nav.dot a:nth-last-child(2):after {
-  width: calc(100% + 5px);
-  background: #fcc3c5;
+/* styling of post-it*/
+
+.note,
+.note-li {
+  list-style: none;
 }
-nav.dot a:last-child {
-  color: black;
+.note {
+  overflow: hidden;
+  /* padding: 3em; */
+  float: left;
 }
-nav.dot a:last-child:hover:before,
-nav.dot a:last-child:hover:first-child:before {
-  width: 10px;
-  height: 10px;
-  margin: 0 0 0 -5px;
-  bottom: 0px;
+.note .note-li .note-link {
+  text-decoration: none;
+  color: #000;
+  background: #ffc;
+  display: inline-block;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  /* Firefox */
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  /* -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+} */
 }
-nav.dot a:last-child:before {
-  background: #fcc3c5;
+.note .note-li {
+  margin: 1em;
+  float: left;
 }
-nav.dot a:last-child:after {
-  display: none;
+
+.note .note-li .note-title {
+  font-weight: bold;
+  font-family: "Reenie Beanie", arial, sans-serif;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.note .note-li .note-body {
+  font-family: "Reenie Beanie", arial, sans-serif;
+  font-size: 180%;
+  font-size: 20px;
+}
+
+.note .note-li:nth-child(even) .note-link {
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+}
+.note .note-li:nth-child(3n) .note-link {
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+}
+.note .note-li:nth-child(5n) .note-link {
+  -o-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+ul .note-li .note-link:hover,
+.note .note-li .note-link:focus {
+  -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25);
+  position: relative;
+  z-index: 5;
 }

@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="app/style/css/reset.css" />
+    <!--google font-->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:300"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?
+family=Reenie+Beanie:regular"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--font awesome-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -33,62 +46,138 @@
         </ul>
       </div>
     </nav> -->
-    <div class="container">
-      <div id="page1">
-        <nav class="dot">
-          <div class="nav-wrapper">
-            <div class="col s12">
-              <a href="page1!" class="breadcrumb">About Me</a>
-              <a href="#page2" class="breadcrumb">Portfolio</a>
-              <a href="#page3" class="breadcrumb">Contact</a>
-            </div>
-          </div>
-        </nav>
+
+    <div id="landing-page">
+      <div class="container type-js headline">
+        <p class="landing-name text-js">Jennifer Rubin</p>
+        <p class="info">Jennifer Rubin</p>
+      </div>
+      <!-- <div class="btn-scroll-arrow">
+        <svg><use xlink:href="#scroll-down"></use></svg>
+        <svg><use xlink:href="#scroll-down"></use></svg>
+      </div> -->
+    </div>
+    <div id="page1">
+      <div class="container">
         <a id="about" class="smooth"></a>
         <div class="row">
-          <div class="col l12 m12 s12">
-            <h1 id="profileHeader">Profile</h1>
+          <div class="col l4 m4 s1 about-me">
+            <h2>About Me</h2>
+
+            <p id="hi">Hello World!</p>
+            <p>
+              My name is Jennifer Rubin, and I am a web developer! I was
+              recently enrolled in a coding program at Columbia University,
+              where I developed a passion for programming! I find it fascinating
+              to see how technology can be integrated in to a range of fields in
+              order to improve optimization. I am very curious about nex-gen
+              sequencing, and the role it plays in precision medicine. Currently
+              you can find me hitting the books, as I am beginning a Masters of
+              Bioinformatics program in the Fall of 2019 at the Johns Hopkins University.
+            </p>
+          </div>
+
+          <div class="col l4 m4 s1">
             <img
               id="profilePic"
               src="app/style/images/profile.jpg"
               alt="profile picture"
             />
-            <div class="profileText">
-              <h2>About Me</h2>
-              <p id="hi">Hello!</p>
-              <p>and I am a web developer currently based in Brooklyn, NY!</p>
-            </div>
+          </div>
+
+          <div class="col l4 m4 s1">
             <div class="descriptionText">
-              <!-- <h2>Education & Experience</h2> -->
+              <h2>Experience</h2>
+              <p>
+                Bacheolors of Science in Biology from the State University of
+                New York at Geneseo
+              </p>
+              <p>
+                Masters of Bioinformatics Candidate at the Johns Hopkins
+                University
+              </p>
+              <p>
+                Technologies: HTML, CSS, Bootstrap, JQuery, AJAX, Node.js,
+                React, JavaScript, and performing statistical analysis using R
+              </p>
             </div>
           </div>
+
+          <!--row-->
         </div>
+        <!--container-->
       </div>
-      <div id="page2">
-        <nav class="dot">
-          <div class="nav-wrapper">
-            <div class="col s12">
-              <a href="#page1" class="breadcrumb">About Me</a>
-              <a href="#page2" class="breadcrumb">Portfolio</a>
-              <a href="#page3" class="breadcrumb">Contact</a>
-            </div>
-          </div>
-        </nav>
+    </div>
+    <div id="page2">
+      <div class="container">
         <a id="portfolio" class="smooth"></a>
         <h1>Portfolio</h1>
-        Portfolio page content goes here.
+        <ul class="note">
+          <li class="note-li">
+            <a href="https://jrubin9326.github.io/findFlix/" class="note-link">
+              <h2 class="note-title">Findflix</h2>
+              <p class="note-body">A movie compatiblity application</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="note">
+          <li class="note-li">
+            <a href="https://lazycupboard.herokuapp.com/ " class="note-link">
+              <h2 class="note-title">Lazy Cupboard</h2>
+              <p class="note-body">
+                An application designed to help find recipes with any
+                ingredients you have in your cupboard
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul class="note">
+          <li class="note-li">
+            <a
+              href="https://quiet-refuge-16014.herokuapp.com/"
+              class="note-link"
+            >
+              <h2 class="note-title">Friend Finder</h2>
+              <p class="note-body">
+                An application that matches you with your most compatible Office
+                character
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul class="note">
+          <li class="note-li">
+            <a
+              href="https://github.com/jrubin9326/eatDaBurger/"
+              class="note-link"
+            >
+              <h2 class="note-title">Eat da Burger</h2>
+              <p class="note-body">
+                Create and eat any burger of your choosing!
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul class="note">
+          <li class="note-li">
+            <a
+              href="https://github.com/jrubin9326/liri-node-app/"
+              class="note-link"
+            >
+              <h2 class="note-title">Liri-Node-Bot</h2>
+              <p class="note-body">
+                A node applicationt that searches for any movie, concert and
+                singer of your choosing!
+              </p>
+            </a>
+          </li>
+        </ul>
       </div>
+      <!--page 2-->
+    </div>
 
-      <div id="page3">
-        <nav class="dot">
-          <div class="nav-wrapper">
-            <div class="col s12">
-              <a href="page1!" class="breadcrumb">About Me</a>
-              <a href="#page2" class="breadcrumb">Portfolio</a>
-              <a href="#page3" class="breadcrumb">Contact</a>
-            </div>
-          </div>
-        </nav>
+    <div id="page3">
+      <div class="container">
         <a id="contact" class="smooth"></a>
         <h1 id="contactHeader">Contact</h1>
         <p id="smallHeader">Want to get in touch with me?</p>
@@ -114,9 +203,16 @@
           </div>
           <hr />
         </div>
+        <!--contianer end-->
       </div>
+      <!--page 3 end-->
     </div>
+
+    <!-- materalize  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--local js-->
     <script src="app/javascript/app.js"></script>
   </body>
 </html>
