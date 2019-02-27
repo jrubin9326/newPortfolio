@@ -13,6 +13,7 @@
 #page1 {
   background: url("../images/option3.png");
   height: 675px;
+  line-height: 2em;
 }
 
 #page2 {
